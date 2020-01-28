@@ -26,7 +26,6 @@ var minimumDistance = function (word) {
     }
 
     const dp = (i, l, r) => {
-        console.dir(mem, `A_${i}_${l}_${r}`);
         if (i === len)
             return 0;
         const cached = mem[`A_${i}_${l}_${r}`];
@@ -48,5 +47,5 @@ var minimumDistance = function (word) {
 // @lc code=end
 
 console.log(minimumDistance(
-    "OPVUW"
+    "HAPPY"
 ))
