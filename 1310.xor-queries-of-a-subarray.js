@@ -11,10 +11,14 @@
  * @return {number[]}
  */
 var xorQueries = function (arr, queries) {
-
+    return queries.map(([l, r]) => {
+        return arr.slice(l, r + 1).reduce((p, c) => {
+            return p ^ c;
+        })
+    })
 };
 // @lc code=end
 console.log(xorQueries(
-    [4, 8, 2, 10],
-    [[2, 3], [1, 3], [0, 0], [0, 3]]
+    [1, 3, 4, 8],
+    [[0, 1], [1, 2], [0, 3], [3, 3]]
 ))
