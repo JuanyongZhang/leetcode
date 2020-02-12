@@ -9,7 +9,9 @@
  * Initialize your data structure here.
  */
 var MyLinkedList = function() {
-    
+    this.head=this.tail=null;
+    this.length=0;
+    return this;
 };
 
 /**
@@ -70,5 +72,5 @@ MyLinkedList.prototype.deleteAtIndex = function(index) {
 // @lc code=end
 
 const llst = new MyLinkedList();
-console.log(llst.get(1));
+console.dir(llst);
 

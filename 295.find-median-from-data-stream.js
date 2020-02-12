@@ -43,37 +43,63 @@ const inorder = (root, callback) => {
     inorder(root.right, callback);
 }
 
-var MedianFinder = function () {
-    this.bst = null;
-};
 
-/** 
- * @param {number} num
- * @return {void}
- */
-MedianFinder.prototype.addNum = function (num) {
-    this.bst = insert(this.bst, num);
-};
-
-/**
- * @return {number}
- */
-MedianFinder.prototype.findMedian = function () {
-    const arr = [];
-    inorder(this.bst, it=>arr.push(it.value));
-    // console.dir(arr);
-    const len = arr.length;
-    if (len === 0)
-        return null
-    if (len === 1)
-        return arr[0]
-    const n = Math.floor(len / 2);
-    if (len % 2 === 0) {
-        return (arr[n - 1] + arr[n]) / 2
-    } else {
-        return arr[n]
+class MedianFinder {
+    constructor() {
+        this.bst = null;
     }
-};
+    addNum(num) {
+        this.bst = insert(this.bst, num);
+    }
+
+    findMedian() {
+        const arr = [];
+        inorder(this.bst, it => arr.push(it.value));
+        // console.dir(arr);
+        const len = arr.length;
+        if (len === 0)
+            return null
+        if (len === 1)
+            return arr[0]
+        const n = Math.floor(len / 2);
+        if (len % 2 === 0) {
+            return (arr[n - 1] + arr[n]) / 2
+        } else {
+            return arr[n]
+        }
+    };
+}
+// var MedianFinder = function () {
+//     this.bst = null;
+// };
+
+// /** 
+//  * @param {number} num
+//  * @return {void}
+//  */
+// MedianFinder.prototype.addNum = function (num) {
+//     this.bst = insert(this.bst, num);
+// };
+
+// /**
+//  * @return {number}
+//  */
+// MedianFinder.prototype.findMedian = function () {
+//     const arr = [];
+//     inorder(this.bst, it => arr.push(it.value));
+//     // console.dir(arr);
+//     const len = arr.length;
+//     if (len === 0)
+//         return null
+//     if (len === 1)
+//         return arr[0]
+//     const n = Math.floor(len / 2);
+//     if (len % 2 === 0) {
+//         return (arr[n - 1] + arr[n]) / 2
+//     } else {
+//         return arr[n]
+//     }
+// };
 
 /**
  * Your MedianFinder object will be instantiated and called as such:
