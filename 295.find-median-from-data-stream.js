@@ -82,12 +82,13 @@ MedianFinder.prototype.findMedian = function () {
  * var param_2 = obj.findMedian()
  */
 // @lc code=end
+const mf = new MedianFinder();
 
-MedianFinder.prototype.addNum(2);
-MedianFinder.prototype.addNum(1);
-// console.log(MedianFinder.prototype.findMedian());
-MedianFinder.prototype.addNum(7);
-MedianFinder.prototype.addNum(3);
+mf.addNum(2);
+mf.addNum(1);
+console.log(mf.findMedian());
+mf.addNum(7);
+mf.addNum(3);
 
-console.log(MedianFinder.prototype.findMedian());
+console.log(mf.findMedian());
 
