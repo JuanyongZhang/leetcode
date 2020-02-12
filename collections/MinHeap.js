@@ -49,23 +49,23 @@ class MinHeap {
             }
 
             let current = 1
-            let leftChildIndex = current * 2
-            let rightChildIndex = current * 2 + 1
+            let ltIdx = current * 2
+            let rtIdx = current * 2 + 1
 
-            while (this.heap[leftChildIndex] &&
-                this.heap[rightChildIndex] &&
-                (this.heap[current] < this.heap[leftChildIndex] ||
-                    this.heap[current] < this.heap[rightChildIndex])) {
-                if (this.heap[leftChildIndex] < this.heap[rightChildIndex]) {
-                    [this.heap[current], this.heap[leftChildIndex]] = [this.heap[leftChildIndex], this.heap[current]]
-                    current = leftChildIndex
+            while (this.heap[ltIdx] &&
+                this.heap[rtIdx] &&
+                (this.heap[current] < this.heap[ltIdx] ||
+                    this.heap[current] < this.heap[rtIdx])) {
+                if (this.heap[ltIdx] < this.heap[rtIdx]) {
+                    [this.heap[current], this.heap[ltIdx]] = [this.heap[ltIdx], this.heap[current]]
+                    current = ltIdx
                 } else {
-                    [this.heap[current], this.heap[rightChildIndex]] = [this.heap[rightChildIndex], this.heap[current]]
-                    current = rightChildIndex
+                    [this.heap[current], this.heap[rtIdx]] = [this.heap[rtIdx], this.heap[current]]
+                    current = rtIdx
                 }
 
-                leftChildIndex = current * 2
-                rightChildIndex = current * 2 + 1
+                ltIdx = current * 2
+                rtIdx = current * 2 + 1
             }
         }
 
