@@ -33,3 +33,11 @@ var numComponents = function (head, G) {
 console.log(
     [0, 1, 1, 1, 0, 1, 0].join('').split('0').filter(Boolean).length
 )
+
+/*
+
+Accepted
+57/57 cases passed (236 ms)
+Your runtime beats 16.36 % of javascript submissions
+Your memory usage beats 100 % of javascript submissions (39.5 MB)
+*/
