@@ -35,3 +35,9 @@ var minInsertions = function (s) {
 console.log(minInsertions(
     "tldjbqjdogipebqsohdypcxjqkrqltpgviqtqz"
 ))
+/*
+Accepted
+57/57 cases passed (784 ms)
+Your runtime beats 20 % of javascript submissions
+Your memory usage beats 100 % of javascript submissions (101.1 MB)
+*/
