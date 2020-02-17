@@ -16,7 +16,7 @@ var minimumDistance = function (word) {
     const k = 26;
     const len = word.length;
     const mem = {
-        A_0_27_27:0
+        A_0_27_27: 0
     }
 
     const distance = (a, b) => {
@@ -37,9 +37,9 @@ var minimumDistance = function (word) {
         const rDis = dp(i + 1, l, c) + distance(r, c);
         // mem.push({ key: `${i}_${c}_${r}`, value: lDis });
         // mem.push({ key: `${i}_${l}_${c}`, value: rDis });
-        mem[`A_${i}_${c}_${r}`]=lDis;
-        mem[`A_${i}_${l}_${c}`]=rDis;
-        
+        mem[`A_${i}_${c}_${r}`] = lDis;
+        mem[`A_${i}_${l}_${c}`] = rDis;
+
         return Math.min(lDis, rDis);
     }
     return dp(0, k, k);
@@ -49,3 +49,10 @@ var minimumDistance = function (word) {
 console.log(minimumDistance(
     "HAPPY"
 ))
+
+/*
+Time Limit Exceeded
+24/54 cases passed (N/A)
+Testcase
+"OPVUWZLCKTDPSUKGHAXIDWHLZFKNBDZEWHBSURTVCADUGTSDMCLDBTAGFWDPGXZBVARNTDICHCUJLNFBQOBTDWMGILXPSFWVGYBZVFFKQIDTOVFAPVNSQJULMVIERWAOXCKXBRI"
+*/
