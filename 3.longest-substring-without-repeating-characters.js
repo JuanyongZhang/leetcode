@@ -32,3 +32,9 @@ const lengthOfLongestSubstring = function (s) {
 const output = lengthOfLongestSubstring('abcabcbb');
 console.log(output);
 
+/*
+lengthOfLongestSubstring
+Accepted
+987/987 cases passed (100 ms)
+Your runtime beats 61.42 % of javascript submissions
+Your memory usage beats 74.33 % of javascript submissions (39.9 MB)
