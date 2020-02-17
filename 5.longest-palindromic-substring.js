@@ -39,7 +39,7 @@ const output = longestPalindrome('baabaaddbbd');
 console.log(output);
 // @lc code=end
 /*
-
+longestPalindrome
 Accepted
 103/103 cases passed (116 ms)
 Your runtime beats 58.34 % of javascript submissions
