@@ -28,4 +28,9 @@ var twoSum = function (nums, target) {
 const output = twoSum([3, 3], 6)
 console.dir(output)
 // @lc code=end
-
+/*
+twoSum
+Accepted
+29/29 cases passed (140 ms)
+Your runtime beats 26.12 % of javascript submissions
+Your memory usage beats 83.06 % of javascript submissions (34.5 MB)
