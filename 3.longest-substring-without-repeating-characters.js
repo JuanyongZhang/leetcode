@@ -27,8 +27,8 @@ const lengthOfLongestSubstring = function (s) {
 
 };
 
+// @lc code=end
+
 const output = lengthOfLongestSubstring('abcabcbb');
 console.log(output);
-
-// @lc code=end
 
