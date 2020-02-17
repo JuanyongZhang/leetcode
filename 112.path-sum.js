@@ -18,7 +18,7 @@
  * @return {boolean}
  */
 var hasPathSum = function (root, sum) {
-    console.dir({ root, sum });
+    // console.dir({ root, sum });
     if (!root) return false;
     if (!root.left && !root.right) return root.val === sum;
     const l = hasPathSum(root.left, sum - root.val);
@@ -27,3 +27,9 @@ var hasPathSum = function (root, sum) {
 };
 // @lc code=end
 
+/*
+Accepted
+114/114 cases passed (68 ms)
+Your runtime beats 55.75 % of javascript submissions
+Your memory usage beats 100 % of javascript submissions (37 MB)
+*/
