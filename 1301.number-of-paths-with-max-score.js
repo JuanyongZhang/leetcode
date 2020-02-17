@@ -15,7 +15,7 @@ var pathsWithMaxScore = function (input) {
     const n = board.length;
     board[n - 1][n - 1] = board[0][0] = '0';
     const count = [...Array(n)].map(x=>Array(n).fill(0));
-    console.log({ count })
+    // console.log({ count })
     const dpMaxScore = (i, j) => {
         if (i < 0 || j < 0)
             return 0;
