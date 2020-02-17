@@ -17,29 +17,41 @@
  * @param {ListNode} l2
  * @return {ListNode}
  */
-
-const numberify = (input) => {
+var numberify = function (input) {
     if (!input || input.length == 0)
         return 0
-    let v = input.val;
-    const arr = [];
-    while (!!v) {
-        arr.push(v);
-        v = input.next;
+    let num = 0n;
+    let pow = 0;
+    let cur = input;
+    while (true) {
+        num += BigInt(cur.val * 10 ** pow++);
+        cur = cur.next;
+        if (!cur)
+            break;
     }
-    return arr.reduce((p, c, i) => {
-        return p + c * Math.pow(10, i);
-    })
+    console.log({ num });
+    return num;
 }
 
 var addTwoNumbers = function (l1, l2) {
     const n1 = numberify(l1);
     const n2 = numberify(l2);
     const sum = n1 + n2;
-    return (sum + '').split('').reverse().join(' -> ');
+    console.log({ sum });
+    const nums = Array.from(String(sum), Number);
+    let root = new ListNode(nums.pop());
+    let cur = root;
+    while (nums.length > 0) {
+        cur.next = new ListNode(nums.pop());
+        cur = cur.next;
+    }
+    return root;
 };
 
-const output = addTwoNumbers([2, 4, 3], [5, 6, 4]);
-console.log(output);
 // @lc code=end
+/*
 
+[1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1]
+\n[5, 6, 4]
+
+*/
