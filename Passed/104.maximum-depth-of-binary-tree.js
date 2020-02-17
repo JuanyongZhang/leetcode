@@ -1,6 +1,10 @@
 w/*
  * @lc app=leetcode id=104 lang=javascript
- *
+ *function TreeNode(val) {
+    this.val = val;
+    this.left = this.right = null;
+}
+
  * [104] Maximum Depth of Binary Tree
  */
 
@@ -8,10 +12,6 @@ w/*
 /**
  * Definition for a binary tree node.
  */
-function TreeNode(val) {
-    this.val = val;
-    this.left = this.right = null;
-}
 /**
  * @param {TreeNode} root
  * @return {number}
@@ -28,4 +28,9 @@ var maxDepth = function (root) {
 console.log(
     maxValue()
 )
+/*
+Accepted
+39/39 cases passed (64 ms)
+Your runtime beats 62.36 % of javascript submissions
+Your memory usage beats 28.13 % of javascript submissions (37.2 MB) */
 
