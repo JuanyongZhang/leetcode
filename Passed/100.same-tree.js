@@ -18,7 +18,7 @@
  * @return {boolean}
  */
 var isSameTree = function (p, q) {
-    console.dir({ p, q })
+    // console.dir({ p, q })
     if (!p && !q)
         return true;
     if (!p || !q)
@@ -73,3 +73,11 @@ const q = createBinaryTree(
 );
 console.dir({ p, q });
 console.log(isSameTree(p, q));
+
+
+/*
+isSameTree
+57/57 cases passed (44 ms)
+Your runtime beats 98.61 % of javascript submissions
+Your memory usage beats 93.33 % of javascript submissions (33.7 MB)
+*/
