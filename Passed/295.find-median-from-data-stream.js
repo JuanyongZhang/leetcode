@@ -118,3 +118,9 @@ mf.addNum(3);
 
 console.log(mf.findMedian());
 
+/*
+Accepted
+18/18 cases passed (8344 ms)
+Your runtime beats 5.13 % of javascript submissions
+Your memory usage beats 100 % of javascript submissions (82 MB)
+*/
