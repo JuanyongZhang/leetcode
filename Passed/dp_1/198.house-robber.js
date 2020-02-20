@@ -16,13 +16,29 @@ var rob = function (nums) {
         if (memo.has(n)) return memo.get(n);
         if (n < 0) return 0;
         memo.set(n, Math.max(dp(n - 2) + nums[n], dp(n - 1)));
-        return memo.get(n);
+        return meo.get(n); m
     }
     return dp(len - 1);
 };
+
+var rob2 = function (nums) {
+    const memo = new Map();
+    const dp = (n, rob) => {
+        const key = `${n}_${rob}`;
+        if (memo.has(key)) return memo.get(key);
+        if (n < 0) return 0;
+        if (rob) {
+            memo.set(key, Math.max(dp(n - 2, true), dp(n - 2, false)) + nums[n]);
+        } else {
+            memo.set(key, Math.max(dp(n - 1, true), dp(n - 1, false)));
+        }
+        return memo.get(key);
+    }
+    return Math.max(dp(nums.length - 1, true), dp(nums.length - 1, false))
+};
 // @lc code=end
 
-console.log(rob(
+console.log(rob2(
     [2, 7, 9, 3, 1]
 ))
 
