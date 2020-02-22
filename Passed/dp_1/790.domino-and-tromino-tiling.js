@@ -11,7 +11,7 @@
  */
 var numTilings = function (N) {
     const mod = 10 ** 9 + 7;
-    let dp = [...Array(N+1)].map(x=>Array(3).fill(0))
+    let dp = [...Array(N + 1)].map(x => Array(3).fill(0))
     //console.table(dp);
     dp[0][0] = 1;
     dp[1][0] = 1;

@@ -26,7 +26,6 @@ var numIslands = function (grid) {
         reverseMarkConnected(x, y + 1);
     }
 
-
     let count = 0;
     for (let r = 0; r < rows; r++) {
         for (let c = 0; c < cols; c++) {
@@ -39,12 +38,18 @@ var numIslands = function (grid) {
     return count;
 };
 // @lc code=end
-console.log(numIslands([
+console.assert(1 === numIslands([
     ['1', '1', '1', '1', '0'],
     ['1', '1', '0', '1', '0'],
     ['1', '1', '0', '0', '0'],
     ['0', '0', '0', '0', '0'],
-]))
+]), 'Wrong Answer!!')
+console.assert(3 === numIslands([
+    ['1', '1', '0', '0', '0'],
+    ['1', '1', '0', '0', '0'],
+    ['0', '0', '1', '0', '0'],
+    ['0', '0', '0', '1', '1'],
+]), 'Wrong Answer!!')
 
 /*
 Accepted
