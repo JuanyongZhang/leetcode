@@ -3,23 +3,36 @@
  *
  * [664] Strange Printer
  */
-
+const utils = require('../collections/utils') 
 // @lc code=start
 /**
  * @param {string} s
  * @return {number}
  */
+
+const createMultiDimensionalArray = (dims) => {
+    let str = 'return ', l = dims.length;
+    dims.forEach((v, i) => {
+        str += i < l - 1 ?
+            `Array(${v}).fill().map(a => `
+            : `Array(${v}` + ')'.repeat(l);
+    });
+    // console.log(str);
+    return Function(str)();
+}
 var strangePrinter = function (s) {
     if (!s || s.length === 0) return 0;
     const chars = s.split('');
     const len = chars.length;
-    const memo = [...Array(len)].map(_r => Array(len));
+    const memo = createMultiDimensionalArray([len, len])
     const type = (start, end) => {
         // if (start < 0 || end > len - 1) return 0;
         if (start > end) return 0;
         if (start === end) return 1;
+        // console.log(memo[start, end])
         if (!!memo[start][end])
             return memo[start][end];
+
         //wrost answer
         let ans = type(start, end - 1) + 1;
         for (let i = start; i < end; i++) {
@@ -35,7 +48,7 @@ var strangePrinter = function (s) {
 // @lc code=end
 
 console.log(strangePrinter(
-    'aaab'
+    'abcabcabc'
 ))
 
 /*
