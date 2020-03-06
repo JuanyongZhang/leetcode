@@ -3,6 +3,7 @@
  *
  * [39] Combination Sum
  */
+
 // @lc code=start
 /**
  * @param {number[]} candidates
@@ -10,30 +11,39 @@
  * @return {number[][]}
  */
 var combinationSum = function (candidates, target) {
-    return permutation(candidates, 0, 3, [false, false, false], [], [])
+    const ans = [];
+    const cur = [];
+
+    const dfs = (nums, target, idx) => {
+        if (target === 0) {
+            ans.push([...cur]);
+            return;
+        }
+        for (let i = idx; i < nums.length; i++) {
+            const num = nums[i];
+            if (num > target)
+                return;
+            cur.push(num);
+            dfs(nums, target - num, i);
+            cur.pop();
+        }
+    }
+
+    dfs(candidates.sort((a, b) => a - b), target, 0);
+    return ans;
 };
-
-const permutation = (arr, d, n, used, curr, ans) => {
-    if (d === n) {
-        ans.push(curr)
-        return;
-    }
-
-    for (let i = 0; i < arr.length; i++) {
-        if (used[i])
-            continue;
-        used[i] = true;
-        curr.push(arr[i]);
-        permutation(arr, d + 1, n, used, curr, ans);
-        curr.pop();
-        used[i] = false;
-    }
-}
-
 // @lc code=end
-let arr = [2, 3, 6, 7];
-let ans = [];
-permutation(
-    arr, 0, 3, Array(arr.length).fill(false), [], ans
-)
-console.log(ans)
+
+console.log(combinationSum(
+    [8, 7, 4, 3], 11
+))
+console.log(combinationSum(
+    [2, 3, 5], 8
+))
+
+/*
+Accepted
+168/168 cases passed (68 ms)
+Your runtime beats 92.2 % of javascript submissions
+Your memory usage beats 66.67 % of javascript submissions (36.8 MB)
+*/
