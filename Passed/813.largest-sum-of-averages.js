@@ -33,12 +33,10 @@ var largestSumOfAverages = function (A, K) {
             }
         }
     }
-
     console.log({ sums });
     console.table(dp);
     return dp[K - 1][N - 1];
 };
-// dp[k][i] = Math.max(dp[k-1][j]+avgs(a[j+1]))
 
 
 // @lc code=end

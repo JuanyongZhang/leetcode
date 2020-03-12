@@ -16,7 +16,7 @@ var rob = function (nums) {
         if (memo.has(n)) return memo.get(n);
         if (n < 0) return 0;
         memo.set(n, Math.max(dp(n - 2) + nums[n], dp(n - 1)));
-        return meo.get(n); m
+        return memo.get(n);
     }
     return dp(len - 1);
 };
@@ -38,7 +38,7 @@ var rob2 = function (nums) {
 };
 // @lc code=end
 
-console.log(rob2(
+console.log(rob(
     [2, 7, 9, 3, 1]
 ))
 
