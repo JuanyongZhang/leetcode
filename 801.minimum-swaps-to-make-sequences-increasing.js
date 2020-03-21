@@ -27,8 +27,6 @@ var minSwap = function (A, B) {
             keep[i] = Math.min(keep[i], swap[i - 1]); //swap i-1
         }
     }
-
-
     return Math.min(swap[len - 1], keep[len - 1]);
 };
 // @lc code=end
