@@ -16,7 +16,7 @@ var findMinArrowShots2 = function (points) {
         if (!points || points.length === 0) return;
         const pos = points[0][1];
         arrows++;
-        recur(points.filter(([l, r]) => l > pos));
+        recur(points.filter(([l, _r]) => l > pos));
     }
     recur(points)
     return arrows;
