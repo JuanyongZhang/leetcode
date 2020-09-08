@@ -17,7 +17,7 @@ var wordBreak2 = function (s, wordDict) {
     })
     return s.length === 0;
 };
-var wordBreak = function (s, dict) {
+var wordBreakMemo = function (s, dict) {
     const memo = new Map();
     const dp = (str) => {
         if (memo.has(str)) return memo.get(str);
@@ -39,11 +39,13 @@ var wordBreak = function (s, dict) {
     }
     return dp(s);
 };
+
+
 // @lc code=end
 
-// console.log(wordBreak(
-//     'leetcode', ['leet', 'code']
-// ));
+console.log(wordBreak(
+    'leetcode', ['leet', 'code']
+));
 // console.log(wordBreak(
 //     'applepenapple', ['apple', 'pen']
 // ));
@@ -54,10 +56,10 @@ var wordBreak = function (s, dict) {
 //     'cars', ['car', 'ca', 'rs']
 // ));
 
-console.log(wordBreak(
-    'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
-    ['a', 'aa', 'aaa', 'aaaa', 'aaaaa', 'aaaaaa', 'aaaaaaa', 'aaaaaaaa', 'aaaaaaaaa', 'aaaaaaaaaa']
-));
+// console.log(wordBreak(
+//     'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
+//     ['a', 'aa', 'aaa', 'aaaa', 'aaaaa', 'aaaaaa', 'aaaaaaa', 'aaaaaaaa', 'aaaaaaaaa', 'aaaaaaaaaa']
+// ));
 
 /*
 

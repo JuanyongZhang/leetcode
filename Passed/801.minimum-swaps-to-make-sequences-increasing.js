@@ -30,11 +30,6 @@ var minSwap = function (A, B) {
     return Math.min(swap[len - 1], keep[len - 1]);
 };
 // @lc code=end
-console.table([
-    [1, 3, 5, 4],
-    [1, 2, 3, 7],
-])
-
 console.log(
     minSwap(
         [1, 3, 5, 4],

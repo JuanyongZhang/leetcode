@@ -11,29 +11,47 @@
  * @return {number}
  */
 var tilingRectangle = function (n, m) {
-    const tile = (h, l) => {
+    let ans = n * m;
+    const tile = (h, l, cur) => {
+        if (cur >= ans) return;
+        console.log({ ans, cur });
         console.table(Array.from(Array(h), () => Array(l).fill(0)));
-        if (h === 0 || l === 0) return 0;
-        if (h === 1) return l;
-        if (l === 1) return h;
-        if (h === l) return 1;
-        const maxLen = Math.min(h, l);
-        let ans = 0;
-        for (let i = maxLen; i >= 1; i--) {
-            //forumla of current one:
-            ans  = ans + 1+ Math.min(tile(h, l - i), tile(h - i, l));
+        if (h === 0 || l === 0) {
+            ans = cur;
+            return
         }
-        return ans;
+        if (h === 1) {
+            cur += l;
+            ans = cur;
+            return;
+        }
+        if (l === 1) {
+            cur += h;
+            ans = cur;
+            return;
+        }
+        if (h === l) {
+            cur++
+            ans = cur;
+            return;
+        }
+        const maxLen = Math.min(h, l);
+        for (let i = maxLen; i >= 2; i--) {
+            h < l ?
+                tile(h, l - i, cur + 1) :
+                tile(h - i, l, cur + 1);
+        }
     }
-    return tile(n, m);
+    tile(n, m, 0);
+    return ans;
 };
 // @lc code=end
 // console.log(tilingRectangle(
 //     3, 3
 // ))
-console.log(tilingRectangle(
-    2, 3
-))
+// console.log(tilingRectangle(
+//     2, 3
+// ))
 console.log(tilingRectangle(
     5, 8
 ))

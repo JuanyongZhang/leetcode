@@ -13,7 +13,7 @@ var climbStairs = function (n) {
     const memo = new Map();
     const dp = (n) => {
         if (memo.has(n)) return memo.get(n)
-        if (n <= 0) return 0;
+        // if (n <= 0) return 0;
         if (n === 1) return 1;
         if (n === 2) return 2;
         memo.set(n, dp(n - 1) + dp(n - 2));
