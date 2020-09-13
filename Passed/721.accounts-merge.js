@@ -44,3 +44,10 @@ const accounts = [
 
 const res = accountsMerge(accounts);
 res.forEach(it => console.log(it));
+
+/*
+Accepted
+49/49 cases passed (1884 ms)
+Your runtime beats 5.16 % of javascript submissions
+Your memory usage beats 28.54 % of javascript submissions (57.9 MB)
+*/
