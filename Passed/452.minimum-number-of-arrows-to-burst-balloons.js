@@ -29,7 +29,7 @@ var findMinArrowShots = function (points) {
     for (const [l, r] of points) {
         if (l > pos) {
             pos = r;
-            arrows++
+            arrows++;
         }
     }
     return arrows;
