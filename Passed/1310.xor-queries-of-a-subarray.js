@@ -14,14 +14,14 @@ var xorQueries = function (arr, queries) {
     return queries.map(([l, r]) => {
         return arr.slice(l, r + 1).reduce((p, c) => {
             return p ^ c;
-        })
-    })
+        }, 0);
+    });
 };
 // @lc code=end
 console.log(xorQueries(
     [1, 3, 4, 8],
     [[0, 1], [1, 2], [0, 3], [3, 3]]
-))
+));
 /*
 Accepted
 42/42 cases passed (1412 ms)

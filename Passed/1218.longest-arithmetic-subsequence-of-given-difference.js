@@ -29,9 +29,12 @@ var longestSubsequenceDumb = function (arr, d) {
 var longestSubsequence = function (arr, d) {
     let max = 0;
     let memo = new Map();
-    for (const num of arr) {
-        memo.set(num, (memo.get(num - d) || 0) + 1)
-        max = Math.max(max, memo.get(num));//Max len at num
+    for (const cur of arr) {
+        const tar = cur - d;
+        memo.set(cur, (memo.get(tar) || 0) + 1);
+        max = Math.max(max, memo.get(cur));//Max len at num
+        // console.log({ cur, tar, max });
+        // console.table(memo);
     }
     return max;
 };
@@ -41,7 +44,7 @@ var longestSubsequence = function (arr, d) {
 
 console.log(longestSubsequence(
     [1, 5, 7, 8, 5, 3, 4, 2, 1], -2
-))
+));
 
 /*
 Accepted

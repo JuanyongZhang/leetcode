@@ -11,12 +11,12 @@
  */
 var minInsertions = function (s) {
     if (!s || s.length === 1)
-        return 0
+        return 0;
     const str = s.split('');
     const mem = {};
     const dp = (lt, rt) => {
         if (lt >= rt) {
-            return 0
+            return 0;
         }
         const k = `K_${lt}_${rt}`;
         if (!!mem[k])
@@ -28,13 +28,13 @@ var minInsertions = function (s) {
         const res = Math.min(lIns, rIns) + 1;
         mem[k] = res;
         return res;
-    }
-    return dp(0, str.length - 1)
+    };
+    return dp(0, str.length - 1);
 };
 // @lc code=end
 console.log(minInsertions(
     "tldjbqjdogipebqsohdypcxjqkrqltpgviqtqz"
-))
+));
 /*
 Accepted
 57/57 cases passed (784 ms)

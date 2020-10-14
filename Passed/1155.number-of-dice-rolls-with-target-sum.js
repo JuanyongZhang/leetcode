@@ -35,7 +35,7 @@ var numRollsToTarget = function (d, f, t) {
 var numRollsToTarget = function (dices, faces, target) {
     const mod = 10 ** 9 + 7;
     const dp = Array.from(Array(dices + 1), () => Array(target + 1).fill(0));
-    dp[0][0] = 1
+    dp[0][0] = 1;
     for (let d = 1; d <= dices; d++) {
         for (let n = 1; n <= faces; n++) {
             for (let t = n; t <= target; t++) {
@@ -43,7 +43,7 @@ var numRollsToTarget = function (dices, faces, target) {
             }
         }
     }
-    return dp[dices][target]
+    return dp[dices][target];
 };
 // @lc code=end
 

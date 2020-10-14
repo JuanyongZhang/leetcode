@@ -16,9 +16,7 @@ var smallestDivisor = function (nums, threshold) {
     let r = Math.max(...nums);
     while (l < r) {
         let m = l + Math.floor((r - l) / 2);
-        const sum = nums.reduce((p, v) => {
-            return p + Math.ceil(v / m);
-        }, 0);
+        const sum = nums.reduce((tot, val) => tot + Math.ceil(val / m), 0);
         if (sum <= threshold)
             r = m;
         else

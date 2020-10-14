@@ -14,7 +14,6 @@ var suggestedProducts = function (products, searchWord) {
     const dict = [...new Set([...products])].sort();
     // console.log(dict);
     const ans = [];
-
     const typeSearchWord = (kw) => {
         let l = 0;
         let r = dict.length - 1;
