@@ -34,7 +34,7 @@ var maxProfitAssignment = function (difficulty, profit, worker) {
     for (let i = 0; i < difficulty.length; i++) {
         maxProfit[difficulty[i]] = Math.max(profit[i], maxProfit[difficulty[i]]);
     }
-    for (let i = 2; i < maxProfit.length; i++) {
+    for (let i = 1; i < maxProfit.length; i++) {
         maxProfit[i] = Math.max(maxProfit[i], maxProfit[i - 1]);
     }
     let ans = 0;
