@@ -28,7 +28,7 @@ var uniquePaths2 = function (m, n) {
 const uniquePaths = function (m, n) {
     //formula dp[x][y]=dp[x-1][y]+dp[x][y-1];
     const dp = Array.from(Array(n + 1), () => Array(m + 1).fill(1));
-    console.table(dp)
+    console.table(dp);
     for (let y = 2; y < n + 1; y++) {
         for (let x = 2; x < m + 1; x++) {
             dp[y][x] = dp[y - 1][x] + dp[y][x - 1];
@@ -36,12 +36,12 @@ const uniquePaths = function (m, n) {
         }
     }
     return dp[n][m];
-}
+};
 // @lc code=end
 
 console.log(uniquePaths(
     7, 3
-))
+));
 
 /*
 Accepted

@@ -9,7 +9,7 @@
  * @param {character[][]} grid
  * @return {number}
  */
-var numIslands = function (grid) {
+var numIslands2 = function (grid) {
     if (!grid || grid.length === 0 || grid[0].length === 0) return 0;
     const rows = grid.length;
     const cols = grid[0].length;
@@ -31,12 +31,38 @@ var numIslands = function (grid) {
         for (let c = 0; c < cols; c++) {
             if (grid[r][c] === '1') {
                 count++;
-                reverseMarkConnected(r, c)
+                reverseMarkConnected(r, c);
             }
         }
     }
     return count;
 };
+
+const numIslands = (grid) => {
+    if (grid.length === 0) return 0;
+    const n = grid.length;
+    const m = grid[0].length;
+    let ans = 0;
+    const dfs = (y, x) => {
+        if (y >= n || x >= m || y < 0 || x < 0 || grid[y][x] === '0')
+            return;
+        grid[y][x] = '0';
+        dfs(y + 1, x);
+        dfs(y - 1, x);
+        dfs(y, x + 1);
+        dfs(y, x - 1);
+    };
+    for (let y = 0; y < n; y++) {
+        for (let x = 0; x < m; x++) {
+            if (grid[y][x] === '1') {
+                ans++;
+                dfs(y, x);
+            }
+        }
+    }
+    return ans;
+};
+
 // @lc code=end
 console.assert(1 === numIslands([
     ['1', '1', '1', '1', '0'],
