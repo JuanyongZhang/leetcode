@@ -26,7 +26,7 @@ var numComponents = function (head, G) {
         head = head.next;
     }
     // console.log({ indices });
-    return indices.join('').split('0').filter(Boolean).length
+    return indices.join('').split('0').filter(Boolean).length;
 };
 // @lc code=end
 
@@ -35,6 +35,12 @@ console.log(
 )
 
 /*
+
+0->1->2->3
+1->1->0->1
+
+0->1->2->3->4
+1->1->0->1->1
 
 Accepted
 57/57 cases passed (236 ms)

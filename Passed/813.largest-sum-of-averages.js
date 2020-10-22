@@ -19,6 +19,8 @@ var largestSumOfAverages = function (A, K) {
         sums[i] = A[i] + sums[i - 1];
         dp[0][i] = sums[i] / (i + 1);
     }
+    console.log(A);
+    console.log(sums);
 
     for (let k = 1; k < K; k++) {
         for (let n = 1; n < N; n++) {
@@ -33,8 +35,6 @@ var largestSumOfAverages = function (A, K) {
             }
         }
     }
-    console.log({ sums });
-    console.table(dp);
     return dp[K - 1][N - 1];
 };
 
@@ -42,7 +42,7 @@ var largestSumOfAverages = function (A, K) {
 // @lc code=end
 console.table(largestSumOfAverages(
     [9, 1, 2, 3, 9], 3
-))
+));
 /*
 Accepted
 51/51 cases passed (52 ms)

@@ -35,14 +35,14 @@ var maxSubArrayDP = function (nums) {
         );
         memo.set(key, max);
         return max;
-    }
+    };
     return dp(0, nums.length);
 };
 //nums: [-2, 1, -3, 4, -1, 2, 1, -5, 4]
 //f:    [-2, 1, -2, 4,  3, 5, 6,  1, 5]
 var maxSubArray = function (nums) {
     let max = nums[0];
-    const f = [nums[0]]
+    const f = [nums[0]];
     for (let i = 1; i < nums.length; i++) {
         f[i] = f[i - 1] > 0 ? nums[i] + f[i - 1] : nums[i];
         max = Math.max(max, f[i]);
@@ -50,10 +50,10 @@ var maxSubArray = function (nums) {
     return max;
 };
 // @lc code=end
-console.log(maxSubArrayBrute(
+console.log(maxSubArrayDP(
     [-2, 1, -3, 4, -1, 2, 1, -5, 4]
 ));
-console.log(maxSubArrayBrute(
+console.log(maxSubArrayDP(
     [-1]
 ));
 console.log(maxSubArray(

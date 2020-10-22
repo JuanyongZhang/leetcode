@@ -27,7 +27,6 @@ var maxProfitAssignment2 = function (difficulty, profit, worker) {
     return max
 };
 
-
 var maxProfitAssignment = function (difficulty, profit, worker) {
     const N = 10 ** 5;
     const maxProfit = Array(N + 1).fill(0);
@@ -45,23 +44,52 @@ var maxProfitAssignment = function (difficulty, profit, worker) {
 };
 
 
+// const maxProfitAssignment3 = function (difficulty, profit, worker) {
+//     const maxProfit = new Map();//Array(N + 1).fill(0);
+//     // difficulty.sort((a, b) => b - a);
+//     for (let i = 0; i < difficulty.length; i++) {
+//         // maxProfit[difficulty[i]] = Math.max(profit[i], maxProfit[difficulty[i]]);
+//         maxProfit.set(difficulty[i], Math.max(profit[i], maxProfit.get(difficulty[i]) || 0));
+//     }
+//     console.table(maxProfit);
+//     const keys = [...maxProfit.keys()];
+
+//     for (let i = 0; i < keys.length; i++) {
+//         maxProfit.set(keys[i], Math.max(
+//             maxProfit.get(keys[i]),
+//             maxProfit.get(keys[i - 1]),
+//         ));
+//     }
+//     console.table(maxProfit);
+
+//     let ans = 0;
+//     keys.sort((a, b) => b - a);
+//     for (const w of worker) {
+//         const lb = keys.findIndex(it => it <= w);
+//         console.log({ work: w, dfct: keys[lb] });
+//         ans += maxProfit.get(keys[lb]);
+//     }
+//     return ans;
+// };
+
+
 // @lc code=end
 
-console.log(maxProfitAssignment(
-    [85, 47, 57],
-    [24, 66, 99],
-    [40, 25, 25],
-))
-console.log(maxProfitAssignment(
-    [13, 37, 58],
-    [4, 90, 96],
-    [34, 73, 45]
-))
+// console.log(maxProfitAssignment(
+//     [85, 47, 57],
+//     [24, 66, 99],
+//     [40, 25, 25],
+// ))
+// console.log(maxProfitAssignment(
+//     [13, 37, 58],
+//     [4, 90, 96],
+//     [34, 73, 45]
+// ))
 console.log(maxProfitAssignment(
     [2, 4, 6, 8, 10],
     [10, 20, 30, 40, 50],
     [4, 5, 6, 7]
-))
+));
 
 /*
 Accepted

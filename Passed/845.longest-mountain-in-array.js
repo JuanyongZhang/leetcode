@@ -49,8 +49,6 @@ var longestMountain = function (A) {
     for (let i = A.length - 2; i >= 0; i--) {
         rt[i] = A[i] > A[i + 1] ? rt[i + 1] + 1 : 0;
     }
-    // console.log({ lt });
-    // console.log({ rt });
     let max = 0;
     for (let i = 0; i < A.length; i++) {
         lt[i] = A[i - 1] < A[i] ? lt[i - 1] + 1 : 0;
@@ -58,21 +56,28 @@ var longestMountain = function (A) {
         const desc = rt[i];
         if (asc > 0 && desc > 0) max = Math.max(max, asc + desc + 1);
     }
+    console.log({ in: A });
+    console.log({ lt });
+    console.log({ rt });
+
     return max;
 };
 // @lc code=end
 console.log(longestMountain(
-    [0, 1, 2, 3, 4, 5, 4, 3, 2, 1, 0]
+    [2,1,4,7,3,2,5]
 ))
-console.log(longestMountain(
-    [2, 1, 4, 7, 3, 2, 1, 5]
-))
-console.log(longestMountain(
-    [2, 2, 2]
-))
-console.log(longestMountain(
-    [2, 2]
-))
+// console.log(longestMountain(
+//     [0, 1, 2, 3, 4, 5, 4, 3, 2, 1, 0]
+// ))
+// console.log(longestMountain(
+//     [2, 1, 4, 7, 3, 2, 1, 5]
+// ))
+// console.log(longestMountain(
+//     [2, 2, 2]
+// ))
+// console.log(longestMountain(
+//     [2, 2]
+// ))
 
 /*
 Accepted

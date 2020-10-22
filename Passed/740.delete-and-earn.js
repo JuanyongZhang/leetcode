@@ -10,13 +10,13 @@
  * @return {number}
  */
 var deleteAndEarn = function (nums) {
-    const buff = Array(10000).fill(0);
+    const buff = Array(20000).fill(0);
     let len = 0;
     for (const num of nums) {
         buff[num] += num;
         len = Math.max(len, num);
     }
-    // console.table(buff);
+    console.table(buff);
     const memo = new Map();
     const dp = n => {
         if (memo.has(n)) return memo.get(n);

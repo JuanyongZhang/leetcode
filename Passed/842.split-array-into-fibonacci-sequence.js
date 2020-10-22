@@ -47,7 +47,8 @@ var splitIntoFibonacci = function (s) {
 
 const fibs = splitIntoFibonacci(
     "539834657215398346785398346991079669377161950407626991734534318677529701785098211336528511"
-)
+);
+console.log(splitIntoFibonacci('123456579'));
 const len = fibs.length;
 if (len > 2) {
     for (let i = 2; i < len; i++) {

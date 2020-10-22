@@ -15,8 +15,8 @@ var increasingTriplet = function (nums) {
     for (let i = 0; i < nums.length; i++) {
         const num = nums[i];
         if (num > min2) return true;
-        else if(num<min1)min1=num;
-        else if(num > min1 && num < min2)min2=num;
+        else if (num < min1) min1 = num;
+        else if (num > min1 && num < min2) min2 = num;
     }
 
     return false;

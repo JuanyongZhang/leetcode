@@ -23,7 +23,8 @@ var maxProfitBrute = function (prices) {
 //Prices: [7,1,5,3,6,4]
 //Lowest: [7,1,1,1,1,1]
 var maxProfit = function (prices) {
-    const lo = [prices[0]];
+    const lo = Array(prices.length).fill(Infinity);
+    lo[0] = prices[0];
     let max = 0;
     for (let i = 1; i < prices.length; i++) {
         lo[i] = Math.min(prices[i], lo[i - 1]);
