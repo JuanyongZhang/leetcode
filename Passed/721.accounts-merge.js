@@ -3,7 +3,39 @@
  *
  * [721] Accounts Merge
  */
+class UnionFindSet {
+    constructor(n) {
+        this.ranks = Array(n + 1).fill(0);
+        this.parents = Array(n + 1).fill(0);
+        for (let i = 0; i < this.parents.length; i++) {
+            this.parents[i] = i;
+        }
+        console.log('New:', { ...this });
+    }
 
+    find(a) {
+        if (a !== this.parents[a])
+            this.parents[a] = this.find(this.parents[a]);
+        console.log('Fnd:', { ...this });
+        return this.parents[a];
+    }
+
+    union(a, b) {
+        const pa = this.find(a);
+        const pb = this.find(b);
+        if (pa === pb) return false;
+        if (this.ranks[pa] > this.ranks[pb])
+            this.parents[pb] = pa;
+        else if (this.ranks[pa] < this.ranks[pb])
+            this.parents[pa] = pb;
+        else {
+            this.parents[pb] = pa;
+            this.ranks[pb] += 1;
+        }
+        console.log('Uno:', { ...this });
+        return true;
+    }
+}
 // @lc code=start
 /**
  * @param {string[][]} accounts
@@ -31,6 +63,47 @@ var accountsMerge = function (accounts) {
     return [...merged.entries()].map(([key, val]) => [val, ...key]);
 };
 
+/**
+     public List<List<String>> accountsMerge(List<List<String>> acts) {
+        Map<String, String> owner = new HashMap<>();
+        Map<String, String> parents = new HashMap<>();
+        Map<String, TreeSet<String>> unions = new HashMap<>();
+        for (List<String> a : acts) {
+            for (int i = 1; i < a.size(); i++) {
+                parents.put(a.get(i), a.get(i));
+                owner.put(a.get(i), a.get(0));
+            }
+        }
+        for (List<String> a : acts) {
+            String p = find(a.get(1), parents);
+            for (int i = 2; i < a.size(); i++)
+                parents.put(find(a.get(i), parents), p);
+        }
+        for(List<String> a : acts) {
+            String p = find(a.get(1), parents);
+            if (!unions.containsKey(p)) unions.put(p, new TreeSet<>());
+            for (int i = 1; i < a.size(); i++)
+                unions.get(p).add(a.get(i));
+        }
+        List<List<String>> res = new ArrayList<>();
+        for (String p : unions.keySet()) {
+            List<String> emails = new ArrayList(unions.get(p));
+            emails.add(0, owner.get(p));
+            res.add(emails);
+        }
+        return res;
+    }
+    private String find(String s, Map<String, String> p) {
+        return p.get(s) == s ? s : find(p.get(s), p);
+    }
+
+ */
+// accountsMerge = function (accounts) {
+//     // const s = new UnionFindSet(accounts.length);
+//     const edges = accounts.flatMap(([name, ...emails]) => emails.map(e => [name, e]));
+//     console.log(edges);
+
+// };
 
 // @lc code=end
 const accounts = [
@@ -43,7 +116,8 @@ const accounts = [
 
 
 const res = accountsMerge(accounts);
-res.forEach(it => console.log(it));
+console.log(res);
+// res.forEach(it => console.log(it));
 
 /*
 Accepted

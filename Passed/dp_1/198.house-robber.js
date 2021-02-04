@@ -40,7 +40,7 @@ var rob2 = function (nums) {
 
 console.log(rob(
     [2, 7, 9, 3, 1]
-))
+));
 
 /*
 Accepted

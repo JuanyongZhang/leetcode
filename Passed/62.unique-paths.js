@@ -13,7 +13,7 @@
 var uniquePaths2 = function (m, n) {
     const memo = new Map();
     const dfs = (x, y) => {
-        const key = `${x}_${y}`
+        const key = `${x}_${y}`;
         if (memo.has(key)) {
             return memo.get(key);
         }
@@ -21,7 +21,7 @@ var uniquePaths2 = function (m, n) {
         if (x === 1 && y === 1) return 1;
         memo.set(key, dfs(x - 1, y) + dfs(x, y - 1))
         return memo.get(key);
-    }
+    };
     return dfs(m, n);
 };
 
