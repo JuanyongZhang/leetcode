@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-02-28T18:30:45.425Z" agent="5.0 (Macintosh; Intel Mac OS X 11_2_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36" etag="653LRfjTvKpT9QYctCG-" version="14.4.3" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-02-28T18:31:24.705Z" agent="5.0 (Macintosh; Intel Mac OS X 11_2_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36" etag="xIRCdreomLxVCb4CaVE_" version="14.4.3" type="github" pages="2">
   <diagram id="6l4x8tIAcQ9BmKEiUvFo" name="Legacy">
     <mxGraphModel dx="2365" dy="917" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -129,7 +129,7 @@
         <mxCell id="BXFXok5KzH3ZuiNn4VCX-8" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn3.iconfinder.com/data/icons/browsers-1/512/Browser_D-128.png" vertex="1" parent="1">
           <mxGeometry x="-407" y="15" width="40" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="BXFXok5KzH3ZuiNn4VCX-9" value="Liferay Portal" style="shape=umlFrame;tabWidth=110;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;width=140;height=50;" vertex="1" parent="1">
+        <mxCell id="BXFXok5KzH3ZuiNn4VCX-9" value="Consortium Insights&lt;br&gt;{Liferay Portal}" style="shape=umlFrame;tabWidth=110;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;width=140;height=50;" vertex="1" parent="1">
           <mxGeometry x="-830" y="80" width="680" height="80" as="geometry" />
         </mxCell>
         <mxCell id="BXFXok5KzH3ZuiNn4VCX-19" value="iFrame*" style="shape=umlFrame;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;width=50;height=30;fontSize=8;" vertex="1" parent="1">
