@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-02-28T18:05:05.103Z" agent="5.0 (Macintosh; Intel Mac OS X 11_2_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36" etag="JQiw1bbLzdBX49S7GLi4" version="14.4.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-02-28T18:09:50.139Z" agent="5.0 (Macintosh; Intel Mac OS X 11_2_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36" etag="bbgHDifrAC0nWYBjnZcT" version="14.4.3" type="github">
   <diagram name="Roadmap" id="b5b7bab2-c9e2-2cf4-8b2a-24fd1a2a6d21">
-    <mxGraphModel dx="1425" dy="459" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="1784" dy="734" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -46,10 +46,10 @@
             <mxPoint x="54" y="10" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BXFXok5KzH3ZuiNn4VCX-30" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/social-flat-buttons-3/512/ping-128.png;fontSize=8;align=left;" vertex="1" parent="1">
+        <mxCell id="BXFXok5KzH3ZuiNn4VCX-30" value="PingFederate" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/social-flat-buttons-3/512/ping-128.png;fontSize=8;align=center;" vertex="1" parent="1">
           <mxGeometry x="-30" y="80" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="BXFXok5KzH3ZuiNn4VCX-32" value="" style="pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.security.active_directory;fontSize=8;" vertex="1" parent="1">
+        <mxCell id="BXFXok5KzH3ZuiNn4VCX-32" value="ActiveDirectory" style="pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.security.active_directory;fontSize=8;" vertex="1" parent="1">
           <mxGeometry x="-200" y="80" width="100" height="80" as="geometry" />
         </mxCell>
         <mxCell id="BXFXok5KzH3ZuiNn4VCX-34" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;{userInfo}&lt;/font&gt;" style="endArrow=open;html=1;endSize=12;startArrow=open;startSize=14;startFill=0;edgeStyle=orthogonalEdgeStyle;align=center;verticalAlign=bottom;endFill=0;strokeWidth=2;fillColor=#ffffff;fontSize=12;" edge="1" parent="1">
@@ -98,7 +98,7 @@
           <mxGeometry x="620" y="433" width="160" height="30" as="geometry" />
         </mxCell>
         <mxCell id="BXFXok5KzH3ZuiNn4VCX-51" value="Insights Service" style="shape=umlFrame;whiteSpace=wrap;html=1;width=140;height=50;boundedLbl=1;verticalAlign=middle;align=center;spacingLeft=5;fontSize=12;" vertex="1" parent="1">
-          <mxGeometry x="120" y="520" width="680" height="140" as="geometry" />
+          <mxGeometry x="120" y="520" width="680" height="160" as="geometry" />
         </mxCell>
         <mxCell id="BXFXok5KzH3ZuiNn4VCX-53" value="SalesAppResolver" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="270" y="532" width="130" height="30" as="geometry" />
@@ -110,10 +110,10 @@
           <mxGeometry x="630" y="532" width="140" height="30" as="geometry" />
         </mxCell>
         <mxCell id="BXFXok5KzH3ZuiNn4VCX-56" value="Services - BM/MR/SAO/Security/Identity/Network/Carriers" style="shape=process2;fixedSize=1;size=5;fontStyle=1;fontSize=12;align=center;" vertex="1" parent="1">
-          <mxGeometry x="270" y="580" width="500" height="30" as="geometry" />
+          <mxGeometry x="270" y="583" width="500" height="30" as="geometry" />
         </mxCell>
         <mxCell id="BXFXok5KzH3ZuiNn4VCX-57" value="Providers - TypeORM/Mongodb/RestClient" style="shape=process2;fixedSize=1;size=5;fontStyle=1;fontSize=12;align=center;" vertex="1" parent="1">
-          <mxGeometry x="270" y="620" width="500" height="30" as="geometry" />
+          <mxGeometry x="270" y="629" width="500" height="30" as="geometry" />
         </mxCell>
         <mxCell id="BXFXok5KzH3ZuiNn4VCX-59" value="{token}" style="endArrow=open;html=1;endSize=12;startArrow=open;startSize=14;startFill=0;edgeStyle=orthogonalEdgeStyle;align=center;verticalAlign=bottom;endFill=0;strokeWidth=2;fillColor=#ffffff;fontSize=12;exitX=0.527;exitY=1.019;exitDx=0;exitDy=0;entryX=0.528;entryY=-0.011;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" edge="1" parent="1" source="BXFXok5KzH3ZuiNn4VCX-9" target="BXFXok5KzH3ZuiNn4VCX-37">
           <mxGeometry x="0.6044" y="21" relative="1" as="geometry">
@@ -148,6 +148,24 @@
               <mxPoint x="476" y="506" />
               <mxPoint x="476" y="528" />
             </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BXFXok5KzH3ZuiNn4VCX-66" value="Redis" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/redis-2/1451/Untitled-2-128.png;dashed=1;fontSize=9;align=center;opacity=50;" vertex="1" parent="1">
+          <mxGeometry x="-35" y="520" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="BXFXok5KzH3ZuiNn4VCX-68" value="{cache}" style="endArrow=open;html=1;endSize=12;startArrow=open;startSize=14;startFill=0;edgeStyle=orthogonalEdgeStyle;align=center;verticalAlign=bottom;endFill=0;strokeWidth=2;fillColor=#ffffff;fontSize=12;exitX=1;exitY=0.5;exitDx=0;exitDy=0;dashed=1;" edge="1" parent="1" source="BXFXok5KzH3ZuiNn4VCX-66">
+          <mxGeometry y="3" relative="1" as="geometry">
+            <mxPoint x="60" y="130" as="sourcePoint" />
+            <mxPoint x="120" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BXFXok5KzH3ZuiNn4VCX-69" value="Kafka" style="points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#945DF2;gradientDirection=north;fillColor=#5A30B5;strokeColor=#ffffff;dashed=1;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.managed_streaming_for_kafka;opacity=50;" vertex="1" parent="1">
+          <mxGeometry x="-140" y="600" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="BXFXok5KzH3ZuiNn4VCX-70" value="{Async Messaging Calls}" style="endArrow=open;html=1;endSize=12;startArrow=open;startSize=14;startFill=0;edgeStyle=orthogonalEdgeStyle;align=center;verticalAlign=bottom;endFill=0;strokeWidth=2;fillColor=#ffffff;fontSize=12;entryX=-0.002;entryY=0.748;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;" edge="1" parent="1" source="BXFXok5KzH3ZuiNn4VCX-69" target="BXFXok5KzH3ZuiNn4VCX-51">
+          <mxGeometry y="3" relative="1" as="geometry">
+            <mxPoint x="55" y="570" as="sourcePoint" />
+            <mxPoint x="130" y="570" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
