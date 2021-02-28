@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-02-28T21:13:26.380Z" agent="5.0 (Macintosh; Intel Mac OS X 11_2_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36" etag="WBhMsNrNYRAJ0Bx3syTA" version="14.4.3" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-02-28T21:13:55.595Z" agent="5.0 (Macintosh; Intel Mac OS X 11_2_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36" etag="Pi4tbkjzsQMW5XhdvtWu" version="14.4.3" type="github" pages="2">
   <diagram id="6l4x8tIAcQ9BmKEiUvFo" name="Legacy">
     <mxGraphModel dx="2875" dy="974" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -181,25 +181,25 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="BXFXok5KzH3ZuiNn4VCX-37" value="Insights App" style="shape=umlFrame;whiteSpace=wrap;html=1;width=140;height=50;boundedLbl=1;verticalAlign=middle;align=center;spacingLeft=5;fontSize=12;" parent="1" vertex="1">
-          <mxGeometry x="-800" y="241" width="680" height="161" as="geometry" />
+          <mxGeometry x="-800" y="239" width="680" height="161" as="geometry" />
         </mxCell>
         <mxCell id="BXFXok5KzH3ZuiNn4VCX-38" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/logos-brands-in-colors/128/react-128.png;fontSize=12;align=left;" parent="1" vertex="1">
-          <mxGeometry x="-792" y="253" width="30" height="30" as="geometry" />
+          <mxGeometry x="-792" y="251" width="30" height="30" as="geometry" />
         </mxCell>
         <mxCell id="BXFXok5KzH3ZuiNn4VCX-39" value="/app/sales-app" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;fontSize=12;" parent="1" vertex="1">
-          <mxGeometry x="-650" y="253" width="130" height="30" as="geometry" />
+          <mxGeometry x="-650" y="251" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="BXFXok5KzH3ZuiNn4VCX-40" value="/app/benchmarking" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;fontSize=12;" parent="1" vertex="1">
-          <mxGeometry x="-482" y="253" width="152" height="30" as="geometry" />
+          <mxGeometry x="-482" y="251" width="152" height="30" as="geometry" />
         </mxCell>
         <mxCell id="BXFXok5KzH3ZuiNn4VCX-41" value="/app/market-reports" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;fontSize=12;" parent="1" vertex="1">
-          <mxGeometry x="-290" y="253" width="140" height="30" as="geometry" />
+          <mxGeometry x="-290" y="251" width="140" height="30" as="geometry" />
         </mxCell>
         <mxCell id="BXFXok5KzH3ZuiNn4VCX-42" value="Modules" style="shape=process2;fixedSize=1;size=5;fontStyle=1;fontSize=12;align=center;" parent="1" vertex="1">
-          <mxGeometry x="-650" y="308" width="500" height="30" as="geometry" />
+          <mxGeometry x="-650" y="306" width="500" height="30" as="geometry" />
         </mxCell>
         <mxCell id="BXFXok5KzH3ZuiNn4VCX-43" value="Context - Apollo Client/Theme/Token/Global States" style="shape=process2;fixedSize=1;size=5;fontStyle=1;fontSize=12;align=center;" parent="1" vertex="1">
-          <mxGeometry x="-650" y="360" width="500" height="30" as="geometry" />
+          <mxGeometry x="-650" y="358" width="500" height="30" as="geometry" />
         </mxCell>
         <mxCell id="BXFXok5KzH3ZuiNn4VCX-44" value="Insights Gateway" style="shape=umlFrame;tabWidth=110;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;width=140;height=30;fontSize=12;align=center;dashed=1;" parent="1" vertex="1">
           <mxGeometry x="-800" y="441" width="680" height="81" as="geometry" />
