@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2021-02-28T18:23:59.563Z" agent="5.0 (Macintosh; Intel Mac OS X 11_2_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36" etag="MB3-Knv2ug1RHmTZOhfe" version="14.4.3" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-02-28T18:26:24.684Z" agent="5.0 (Macintosh; Intel Mac OS X 11_2_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36" etag="73q9Ng0dZrSq7C4d-jqy" version="14.4.3" type="github" pages="2">
   <diagram name="Roadmap" id="b5b7bab2-c9e2-2cf4-8b2a-24fd1a2a6d21">
     <mxGraphModel dx="2365" dy="917" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="BXFXok5KzH3ZuiNn4VCX-2" value="Browser or Mobile App" style="shape=umlFrame;tabWidth=110;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;width=140;height=30;" vertex="1" parent="1">
-          <mxGeometry x="-710" y="10" width="360" height="50" as="geometry" />
+          <mxGeometry x="-710" y="10" width="370" height="50" as="geometry" />
         </mxCell>
         <mxCell id="BXFXok5KzH3ZuiNn4VCX-5" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn3.iconfinder.com/data/icons/browsers-1/512/Browser_A-128.png" vertex="1" parent="1">
           <mxGeometry x="-557" y="15" width="40" height="40" as="geometry" />
@@ -222,6 +222,9 @@
             <mxPoint as="offset" />
             <Array as="points" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="u96J1Pz36pWBYjRKThUW-4" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shadow=0;dashed=0;strokeWidth=1;shape=mxgraph.android.phone2;strokeColor=#c0c0c0;fontSize=9;opacity=50;align=center;" vertex="1" parent="1">
+          <mxGeometry x="-680" y="250" width="200" height="390" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
