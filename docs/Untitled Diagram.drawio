@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-02-28T17:01:54.791Z" agent="5.0 (Macintosh; Intel Mac OS X 11_2_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36" etag="TrHSSlalYX_ApQ5bjnM8" version="14.4.3" type="github">
-  <diagram name="Page-1" id="b5b7bab2-c9e2-2cf4-8b2a-24fd1a2a6d21">
-    <mxGraphModel dx="1784" dy="779" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+<mxfile host="app.diagrams.net" modified="2021-02-28T17:46:41.813Z" agent="5.0 (Macintosh; Intel Mac OS X 11_2_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36" etag="ZJlzfdE0asUNy9jFrtGb" version="14.4.3" type="github">
+  <diagram name="Roadmap" id="b5b7bab2-c9e2-2cf4-8b2a-24fd1a2a6d21">
+    <mxGraphModel dx="1784" dy="734" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -19,7 +19,7 @@
         <mxCell id="BXFXok5KzH3ZuiNn4VCX-8" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn3.iconfinder.com/data/icons/browsers-1/512/Browser_D-128.png" vertex="1" parent="1">
           <mxGeometry x="543" y="15" width="40" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="BXFXok5KzH3ZuiNn4VCX-9" value="Liferay Portal" style="shape=umlFrame;tabWidth=110;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;width=140;height=30;" vertex="1" parent="1">
+        <mxCell id="BXFXok5KzH3ZuiNn4VCX-9" value="Liferay Portal" style="shape=umlFrame;tabWidth=110;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;width=140;height=50;" vertex="1" parent="1">
           <mxGeometry x="120" y="80" width="680" height="80" as="geometry" />
         </mxCell>
         <mxCell id="BXFXok5KzH3ZuiNn4VCX-19" value="iFrame*" style="shape=umlFrame;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;width=50;height=30;fontSize=8;" vertex="1" parent="1">
@@ -63,6 +63,27 @@
             <mxPoint x="-98" y="130" as="sourcePoint" />
             <mxPoint x="-28" y="130" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="BXFXok5KzH3ZuiNn4VCX-37" value="Insights App" style="shape=umlFrame;whiteSpace=wrap;html=1;width=140;height=50;boundedLbl=1;verticalAlign=middle;align=center;spacingLeft=5;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="120" y="180" width="680" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="BXFXok5KzH3ZuiNn4VCX-38" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/logos-brands-in-colors/128/react-128.png;fontSize=12;align=left;" vertex="1" parent="1">
+          <mxGeometry x="128" y="192" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BXFXok5KzH3ZuiNn4VCX-39" value="/app/sales-app" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="270" y="192" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BXFXok5KzH3ZuiNn4VCX-40" value="/app/benchmarking" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="438" y="192" width="152" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BXFXok5KzH3ZuiNn4VCX-41" value="/app/market-reports" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="630" y="192" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BXFXok5KzH3ZuiNn4VCX-42" value="Modules" style="shape=process2;fixedSize=1;size=5;fontStyle=1;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="270" y="240" width="500" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BXFXok5KzH3ZuiNn4VCX-43" value="Context" style="shape=process2;fixedSize=1;size=5;fontStyle=1;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="270" y="280" width="500" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
