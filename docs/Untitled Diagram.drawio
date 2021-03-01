@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-01T18:56:07.025Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="fMwMPW7G2invMm87oGqp" version="12.9.11" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-03-01T20:52:11.968Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="mdE-WlotkmpOYVA3AGYF" version="14.4.3" type="github" pages="2">
   <diagram id="6l4x8tIAcQ9BmKEiUvFo" name="Legacy">
     <mxGraphModel dx="2597" dy="811" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -116,7 +116,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="Roadmap 2020+" id="b5b7bab2-c9e2-2cf4-8b2a-24fd1a2a6d21">
-    <mxGraphModel dx="2597" dy="811" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="2901" dy="821" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -345,6 +345,9 @@
             <mxPoint x="-446" y="122" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="qH1ent__ekWiRjZ9tDWa-4" value="&lt;h1&gt;Highlights&lt;/h1&gt;&lt;p&gt;Robust - Insights Services are running on PM2 cluster, auto respawn upon memory threshold.&lt;br&gt;&lt;/p&gt;&lt;p&gt;High Performance - Insights Services are developed with non-blocking nodejs, stateless service are cached by redis.&lt;/p&gt;&lt;p&gt;Scalable -&amp;nbsp; Insight Services is running on PM2 cluster, which can be easily scaled up by adding more CPU and Memory&lt;/p&gt;&lt;p&gt;Fault tolerance - transactional operation are executed thru kafka payload, which guarantee the success of the whole transaction.&lt;/p&gt;&lt;p&gt;&lt;span&gt;Secured - APIs are secured by nestjs authguard, encrypted jwt is required for access the secured API.&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;Monitor &amp;amp; Alert - service logs are consolidated and monitored on ElasticSearch.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;CI/CD - End-to-End regression testing are in place for both FE and BE, FE is using jest + webdrive w/ screenshot&amp;nbsp;&lt;/span&gt;&lt;/p&gt;comparison, BE is using jest with testing payload and assured the response, build/release are done by Atlassian&amp;nbsp;Bamboo" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1090" y="1000" width="730" height="290" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
